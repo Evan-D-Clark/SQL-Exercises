@@ -4,4 +4,9 @@ Build a conceptual model
 	Typical technologies: Entity Relationship and UML
 		draw.io is a good platform for this
 Build a logical model
+	Specify type of each attribute
+	Specify relationship between entities
 Build a physical model
+	Implement logical model with specific technology
+	Add primary/foreign keys to each table
+	Forign key references the primary key of another table
