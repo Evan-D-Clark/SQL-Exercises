@@ -1,0 +1,7 @@
+Understand the requirements
+Build a conceptual model
+	The things and concepts the database will work with
+	Typical technologies: Entity Relationship and UML
+		draw.io is a good platform for this
+Build a logical model
+Build a physical model
