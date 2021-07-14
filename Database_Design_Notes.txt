@@ -10,3 +10,16 @@ Build a physical model
 	Implement logical model with specific technology
 	Add primary/foreign keys to each table
 	Forign key references the primary key of another table
+		(update foreign key on update [almost always cascade] 
+			and on delete [case by case])
+	Composite primary key uses two keys to be uniquely identified
+	Check for redundancy (normalization)
+1NF
+	Each cell should have a single value and we cannot have repeated columns
+2NF
+	Every table should describe one entity, and every column in that table
+		should describe that entity.
+3NF
+	A column in a table shouldn't be derived from others in that table.
+Focus on removing repitition and keep requirements in mind. Don't solve problems that don't
+	exist (don't fear ghosts)
