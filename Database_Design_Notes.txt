@@ -23,3 +23,21 @@ Build a physical model
 	A column in a table shouldn't be derived from others in that table.
 Focus on removing repitition and keep requirements in mind. Don't solve problems that don't
 	exist (don't fear ghosts)
+
+Indexing
+	Data structures for DBs. Like a directory.
+	They increase database size and slow down writes. Don't make them unless you really need
+		them for particular queries
+	Order composite indexes with most frequently used column first or highest to lowest
+		cardinality. Or don't, it depends on the queries that the index serves
+	Things like ORs and mathmatical expressions can mess up the use of indexes. Isolating
+		columns and breaking up an OR into a UNION can help
+	Indexes can be used to make ORDER BYs faster. Try to avoid ORDER BYs though.
+	In a composite index on a and b, you can filter by a, ab, aDESCbDESC, but anything else
+		won't properly utilize the index
+	Secondary indexes automatically include the primary key. If a search uses a column that
+		isn't covered by the index, it won't be used.
+	If you make index ab, don't make a. Look at existing indexes before making new ones
+
+Security
+	Specify web server for end users to connect from with IP address
